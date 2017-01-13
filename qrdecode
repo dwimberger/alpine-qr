@@ -1,0 +1,3 @@
+#!/bin/sh
+CLASSPATH=/zxing/core-3.3.0.jar:/zxing/javase-3.3.0.jar:/zxing/jcommander-1.58.jar
+java -client -cp $CLASSPATH com.google.zxing.client.j2se.CommandLineRunner $* | tail +3 | head -1
